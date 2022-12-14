@@ -1,0 +1,707 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* -------------main------------ */
+
+button {
+  background-color: #b49c73;
+  border: none;
+  border-radius: 5px;
+  font: 700 17px "Montserrat", sans-serif;
+}
+button:hover {
+  cursor: pointer;
+  color: white;
+}
+main {
+  display: grid;
+  grid-template: 130.5px / 1fr 3fr;
+}
+main .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37373f;
+  cursor: pointer;
+}
+main .logo:hover {
+  cursor: pointer;
+}
+main .logo h1 {
+  font: 700 56px "Roboto", sans-serif;
+  color: #b49c73;
+  text-transform: uppercase;
+}
+.contacts .frow {
+  display: grid;
+  grid-template: 44px / 3fr 2fr;
+  color: #b49c73;
+  border-bottom: 1px solid #dee2e6;
+}
+.contacts .frow .contNumb {
+  padding: 1.5% 0 0 4%;
+}
+.contacts .frow .contSoc {
+  display: grid;
+  grid-template: 28px / repeat(5, 28px);
+  justify-content: end;
+  grid-gap: 10px;
+  padding: 1% 5% 0 0;
+}
+.contacts .frow .contSoc .icon {
+  border: 1px solid;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contacts .frow .contSoc .icon:hover {
+  color: black;
+  background-color: #b49c73;
+  cursor: pointer;
+  border: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 2% 0 2%;
+}
+nav ul {
+  width: 40%;
+  display: flex;
+  gap: 20px;
+  font: 500 17px "Roboto", sans-serif;
+  padding-top: 1%;
+}
+nav ul li:hover {
+  cursor: pointer;
+  color: #b49c73;
+}
+
+/* ----------------slider---------------- */
+
+.carusel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.carusel .photo {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carusel .photo .photo1 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/carousel-1.jpg) no-repeat center / cover;
+  position: absolute;
+  left: 0;
+}
+.carusel .photo .photo1 .heroHeader {
+  background-color: rgba(55, 55, 63, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.carusel .photo .photo2 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/carousel-2.jpg) no-repeat center / cover;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.carusel .photo .photo2 .heroHeader1 {
+  background-color: rgba(55, 55, 63, 0.7);
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+.carusel .photo .icons .left {
+  position: absolute;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  color: rgb(146, 146, 146);
+}
+.carusel .photo .icons .right {
+  position: absolute;
+  left: 85%;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 2;
+  color: rgb(146, 146, 146);
+}
+.carusel .photo .icons label:hover {
+  cursor: pointer;
+}
+.carusel .photo .icons label .frame {
+  width: 45px;
+  height: 45px;
+  background-color: #37373f77;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(120px, 450px);
+}
+.carusel .photo .icons label .frame:hover {
+  cursor: pointer;
+  background-color: #0f0f0f77;
+}
+input[type="checkbox"] {
+  display: none;
+}
+#slide1:checked ~ .photo1 {
+  position: absolute;
+  left: -100%;
+}
+.carusel .photo h2 {
+  font: 24px "Roboto", sans-serif;
+  color: white;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+}
+.carusel .photo p {
+  font: 88px "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0 30%;
+  margin-bottom: 24px;
+}
+
+/* --------------About Us-------------- */
+
+.aboutUs {
+  display: grid;
+  grid-template-columns: 29.5% 42%;
+  gap: 20px;
+  padding: 10% 0 10% 20.5%;
+}
+.aboutUs .aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 3%;
+}
+.aboutUs .aboutText > h2 {
+  font: 700 32px "Roboto", sans-serif;
+  color: #b49c73;
+}
+.aboutUs .aboutText > h4 {
+  font: 700 40px "Roboto", sans-serif;
+  color: #37373f;
+}
+
+/* --------------Services------------- */
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(140px, 255px) minmax(260px, 825px)
+  );
+  gap: 20px;
+  padding: 10% 0 10% 20%;
+}
+.services .ServText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.services .colFrame {
+  border-radius: 5px;
+  height: 300px;
+  display: flex;
+  gap: 10px;
+}
+.services .colFrame .servFrame {
+  width: 180px;
+  height: 300px;
+  background-color: #b49c73;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.services .colFrame .servFrame .servIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+}
+.services .colFrame .servFrame > h5 {
+  font: 20px "Roboto", sans-serif;
+  color: #37373f;
+}
+.services .colFrame .servFrame > p {
+  font: 16px "Montserrat", sans-serif;
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
+
+/* ---------------Apoitment----------------- */
+
+.apoitment {
+  width: 60%;
+  background: url(img/carousel-1.jpg) no-repeat center / cover;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.apoitment .apoHeader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 55, 63, 0.7);
+  display: flex;
+  justify-content: center;
+  padding: 8% 0;
+  border-radius: 6px;
+}
+.apoitment .apoHeader .menu {
+  width: 46%;
+  z-index: 2;
+  background-color: #37373fb3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 6px;
+  padding: 5% 0;
+}
+.apoitment .apoHeader .menu form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 5% 7%;
+}
+.apoitment .apoHeader .menu input {
+  width: 97.5%;
+  height: 48px;
+  border-radius: 6px;
+  border: none;
+}
+
+.apoitment .apoHeader .menu .apoData {
+  width: 47%;
+  font: 16px "Montserrat", sans-serif;
+  padding-left: 5%;
+  color: #757575;
+}
+.apoitment .apoHeader .menu > button {
+  width: 83.5%;
+  height: 56px;
+  margin-right: 2%;
+}
+.apoitment .apoHeader .menu input:focus {
+  outline: none;
+}
+.apoitment .apoHeader .menu input::placeholder {
+  font: 16px "Montserrat", sans-serif;
+  color: #757575;
+  padding-left: 5%;
+}
+.apoitment .apoHeader .menu form select {
+  width: 97.5%;
+  height: 48px;
+  border-radius: 6px;
+  font: 16px "Montserrat", sans-serif;
+  color: #757575;
+  padding-left: 5%;
+}
+.apoitment .apoHeader .menu form select:focus {
+  outline: none;
+}
+
+/* ----------------Our Features---------------- */
+
+.features {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(2, 37%);
+  padding: 10% 0 10% 20%;
+  gap: 20px;
+}
+.features img {
+  width: 100%;
+  border-radius: 6px;
+}
+.features .text {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 48px;
+}
+.features .text > h3 {
+  font: 16px "Roboto", sans-serif;
+  color: #37373f;
+  margin-bottom: 8px;
+}
+.features .text > h2 {
+  font: 40px "Roboto", sans-serif;
+  color: #37373f;
+  margin-bottom: 24px;
+}
+.features .text > .frame {
+  width: 544px;
+  display: flex;
+}
+.features .text > .frame h4 {
+  font: 20px "Roboto", sans-serif;
+  margin-bottom: 8px;
+}
+.features .text > .frame p {
+  font: 16px "Montserrat", sans-serif;
+  color: #757575;
+}
+.features .text .frameIcon {
+  width: 46px;
+  height: 46px;
+  background-color: #b49c73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.features .text .frameIcon > p {
+  font: 20px "Roboto", sans-serif;
+  color: #37373f;
+}
+.features .text .frameText {
+  width: 474px;
+  margin-left: 24px;
+}
+
+/* --------------Action------------- */
+
+.action {
+  padding: 0 0 10% 20%;
+}
+.action .actionImg {
+  width: 75%;
+  height: 60vh;
+  background: url(img/carousel-2.jpg) no-repeat center / cover;
+  border-radius: 6px;
+}
+.action .actionImg .actionHeader {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(55, 55, 63, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 0 20%;
+  border-radius: 6px;
+}
+.action .actionImg .actionHeader > h2 {
+  font: 700 40px "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 5%;
+}
+
+/* ------------------Atorneys------------------ */
+
+.atorneys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+}
+.atorneys .colorFrame {
+  width: 60%;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  gap: 60px;
+}
+.atorneys > h2 {
+  font: 700 40px "Roboto", sans-serif;
+  margin-bottom: 2%;
+}
+.atorneys > h4 {
+  font: 16px "Roboto", sans-serif;
+  color: #37373f;
+  line-height: 2;
+}
+.atorneys .colorFrame .atorFrame {
+  width: 240px;
+  height: 100%;
+  background-color: #b49c73;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+}
+.atorneys .colorFrame .atorFrame > h5 {
+  font: 20px "Roboto", sans-serif;
+  color: #37373f;
+}
+.atorneys .colorFrame .atorFrame > p {
+  font: 16px "Montserrat", sans-serif;
+  color: rgb(56, 56, 56);
+  text-align: center;
+}
+.atorneys .colorFrame .atorFrame .atorImage img {
+  width: 100%;
+  height: 100%;
+}
+
+/* ------------------Testimoial---------------- */
+
+.testimoial {
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimoial > h2 {
+  font: 700 40px "Roboto", sans-serif;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.testimoial > h4 {
+  font: 16px "Roboto", sans-serif;
+  color: #37373f;
+  line-height: 2;
+  text-align: center;
+}
+.testimoial .testimMenu {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.testimoial .testimMenu .testimFrame {
+  width: 300px;
+  height: 230px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row-reverse;
+  border: none;
+}
+.testimoial .testimMenu .testimFrame .testimText {
+  width: 70%;
+  height: 100%;
+  background-color: #37373f;
+  border-radius: 6%;
+  border: none;
+  padding: 13% 17%;
+}
+.testimoial .testimMenu .testimFrame .testimText > p {
+  font: 16px "Montserrat", sans-serif;
+  color: #fff;
+  line-height: 1.3;
+}
+.testimoial .testimMenu .testimFrame .testimCleint {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.testimoial .testimMenu .testimFrame .testimCleint .testimCleintImg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.testimoial .testimMenu .testimFrame .testimCleint .testimCleintImg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* ------------------footer----------------- */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 0 0 2%;
+  background-color: #37373f;
+}
+footer > .div1 {
+  width: 578.13px;
+  height: 104px;
+  margin: 0 15px 50px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #47474b;
+}
+footer > .div1 > i {
+  color: #b49c73;
+  padding: 0 3% 3.5% 0;
+}
+footer > .div1 h5 {
+  font: 20px "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+footer > .div1 p {
+  font: 16px "Montserrat", sans-serif;
+  color: white;
+}
+footer > .div2 {
+  width: 426.14px;
+  height: 205px;
+  margin: 0 15px 30px 15px;
+}
+footer > .div2 > h2 {
+  font: 700 52px "Roboto", sans-serif;
+  color: #b49c73;
+}
+footer > .div2 > p {
+  font: 16px "Montserrat", sans-serif;
+  color: white;
+  margin-bottom: 25px;
+}
+footer > .div2 > .fframeicon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+footer > .div2 > .fframeicon .footIcon {
+  width: 46px;
+  height: 46px;
+  border: 1px solid white;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > .div2 > .fframeicon .footIcon {
+  font-size: 20px;
+  color: white;
+}
+footer > .div2 > .fframeicon .footIcon:hover {
+  background-color: #fff;
+  color: #37373f;
+  cursor: pointer;
+}
+footer > .div2 h4 {
+  font: 24px "Roboto", sans-serif;
+  color: #b49c73;
+  margin-bottom: 24px;
+}
+footer > .div2 ul li {
+  font: 16px "Montserrat", sans-serif;
+  color: white;
+  line-height: 1.9;
+}
+footer > .div2 ul li::before {
+  content: "❯";
+  font-size: 16px;
+  margin-right: 10px;
+  color: #fff;
+}
+footer > .div2 form {
+  display: flex;
+}
+footer > .div2 > form > input {
+  width: 70%;
+  height: 50px;
+  border: none;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+footer > .div2 > form > input::placeholder {
+  font: 16px "Montserrat", sans-serif;
+  padding-left: 5%;
+}
+footer > .div2 > form > input:focus {
+  outline: none;
+}
+footer > .div2 > form > button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+footer > .div3 {
+  width: 96.3%;
+  margin: 15px;
+  background-color: #47474b;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font: 16px "Montserrat", sans-serif;
+  color: #dee2e6;
+  margin-top: 3%;
+  padding: 1.5%;
+}
+footer > .div3 a {
+  color: #b49c73;
+  font-weight: 700;
+}
+footer > .div3 > .divA {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+footer > .div3 > .divB {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 2%;
+}
+
+/* ----------------Burger Menu ------------------- */
+#burgerMenu {
+  display: none;
+}
+.burgerLabel {
+  display: none;
+}
+.burgerLabel:hover {
+  cursor: pointer;
+}
+.burgerLabel::before {
+  content: "☰";
+  font-size: 40px;
+  font-weight: 800;
+}
+.burgerUl {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  background-color: #fff;
+  transition: 1s;
+}
+.burgerUl li {
+  font: 17px "Roboto", sans-serif;
+  padding: 5px 0;
+  color: #37373f;
+}
+#burgerMenu:checked ~ .burgerUl {
+  top: 0;
+}
