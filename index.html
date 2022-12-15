@@ -25,9 +25,9 @@
       <div class="logo">
         <h1>Justice</h1>
       </div>
-      <div class="contacts">
-        <div class="frow">
-          <div class="contNumb">
+      <div class="headerMenu">
+        <div class="contacts">
+          <div class="contTelMail">
             <i class="fa fa-envelope text-primary mr-2"></i>
             <small style="color: #757575; font-family: Montserrat"
               >info@example.com</small
@@ -48,7 +48,7 @@
             <div class="icon"><i class="fab fa-youtube"></i></div>
           </div>
         </div>
-        <nav>
+        <nav class="navigationMenu">
           <ul>
             <li style="color: #b49c73">Home</li>
             <li>About</li>
@@ -57,40 +57,40 @@
             <li>Drobdown</li>
             <li>Contact</li>
           </ul>
-          <button style="width: 153px; height: 46px">Get A Quote</button>
+          <button class="getAQuoteButton" style="width: 153px; height: 46px">Get A Quote</button>
         </nav>
       </div>
     </main>
 
     <!-- ---------------Slider---------------- -->
 
-    <section class="carusel" id="home">
+    <section class="slider" id="home">
       <div class="photo">
         <input type="checkbox" id="slide1" name="a" />
         <div class="photo1">
           <div class="heroHeader">
             <h2>BEST LAW AGENCY</h2>
             <p>Our Fighting Is For Your Justice</p>
-            <button style="width: 196px; height: 58px">Call Us Now</button>
+            <button class="callUsNowButton" style="width: 196px; height: 58px">Call Us Now</button>
           </div>
         </div>
         <div class="photo2">
           <div class="heroHeader1">
             <h2>RESULTS YOU DESERVE</h2>
             <p>We Prepared To Oppose For You</p>
-            <button style="width: 270px; height: 58px">
+            <button class="appointmentButton" style="width: 270px; height: 58px">
               Get An Appointment
             </button>
           </div>
         </div>
         <div class="icons">
           <label for="slide1" class="left">
-            <div class="frame">
+            <div class="prevSliderIcon" >
               <i class="fas fa-chevron-left" style="font-size: 20px"></i>
             </div>
           </label>
           <label for="slide1" class="right">
-            <div class="frame">
+            <div class="nextSliderIcon" >
               <i class="fas fa-chevron-right" style="font-size: 20px"></i>
             </div>
           </label>
@@ -118,14 +118,14 @@
           lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo
           sed sed diam. Ea et erat ut sed diam sea ipsum est dolor
         </p>
-        <button style="width: 145px; height: 46px">Learn More</button>
+        <button class="learnMoreButton" style="width: 145px; height: 46px">Learn More</button>
       </div>
     </section>
 
     <!-- ------------------Services Start--------------- -->
 
-    <section class="services">
-      <div class="servText">
+    <section class="ourPractice">
+      <div class="ourPracticeArea">
         <p style="font: 16px 'Roboto', sans-serif; color: #37373f">
           OUR PRACTICE
         </p>
@@ -137,11 +137,11 @@
           ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed
           diam. Ea et erat ut sed diam sea ipsum
         </p>
-        <button style="width: 166px; height: 46px">More Services</button>
+        <button class="moreServicesButton" style="width: 166px; height: 46px">More Services</button>
       </div>
-      <div class="colFrame">
-        <div class="servFrame">
-          <div class="servIcon">
+      <div class="ourPracticeService">
+        <div class="practiceSections">
+          <div class="practiceSectionsIcon">
             <i class="fa fa-2x fa-hand-holding-usd" style="color: #b49c73"></i>
           </div>
           <h5>Business Law</h5>
@@ -150,8 +150,8 @@
             dolor stet at at. Tempor dolor sit ipsum
           </p>
         </div>
-        <div class="servFrame">
-          <div class="servIcon">
+        <div class="practiceSections">
+          <div class="practiceSectionsIcon">
             <i class="fa fa-2x fa-gavel" style="color: #b49c73"></i>
           </div>
           <h5>Criminal Law</h5>
@@ -160,8 +160,8 @@
             dolor stet at at. Tempor dolor sit ipsum
           </p>
         </div>
-        <div class="servFrame">
-          <div class="servIcon">
+        <div class="practiceSections">
+          <div class="practiceSectionsIcon">
             <i class="fa fa-2x fa-landmark" style="color: #b49c73"></i>
           </div>
           <h5>Civil Law</h5>
@@ -170,8 +170,8 @@
             dolor stet at at. Tempor dolor sit ipsum
           </p>
         </div>
-        <div class="servFrame">
-          <div class="servIcon">
+        <div class="practiceSections">
+          <div class="practiceSectionsIcon">
             <i class="fa fa-2x fa-users" style="color: #b49c73"></i>
           </div>
           <h5>Family Law</h5>
@@ -185,9 +185,9 @@
 
     <!-- ---------------Apoitment---------------- -->
 
-    <section class="apoitment" id="practice">
-      <div class="apoHeader">
-        <div class="menu">
+    <section class="apoitment" >
+      <div class="apoitmentHeader">
+        <div class="apoitmentMenu">
           <h2 style="font: 40px 'Roboto', sans-serif; color: white">
             Get An Appointment
           </h2>
@@ -196,14 +196,14 @@
             <input type="email" placeholder="Your Email" />
             <input class="apoData" type="date" />
             <input class="apoData" type="datetime-local" />
-            <select name="menu" id="">
+            <select name="apoitmentMenu" id="">
               <option value="Seleck A Service">Seleck A Service</option>
               <option value="Service1">Service1</option>
               <option value="Service2">Service2</option>
               <option value="Service3">Service3</option>
             </select>
           </form>
-          <button>Get An Appointment</button>
+          <button class="getAnAppointmentButton">Get An Appointment</button>
         </div>
       </div>
     </section>
@@ -214,14 +214,14 @@
       <div>
         <img src="img/feature.jpg" alt="" />
       </div>
-      <div class="text">
+      <div class="featuresTextSections">
         <h3>OUR FEATURES</h3>
         <h2>Why Choose Us</h2>
-        <div class="frame">
-          <div class="frameIcon">
+        <div class="featuresSection">
+          <div class="featuresIcon">
             <p>01</p>
           </div>
-          <div class="frameText">
+          <div class="featuresText">
             <h4>Best Law Practices</h4>
             <p>
               Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna
@@ -229,11 +229,11 @@
             </p>
           </div>
         </div>
-        <div class="frame">
-          <div class="frameIcon">
+        <div class="featuresSection">
+          <div class="featuresIcon">
             <p>02</p>
           </div>
-          <div class="frameText">
+          <div class="featuresText">
             <h4>Efficiency & Trust</h4>
             <p>
               Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna
@@ -241,11 +241,11 @@
             </p>
           </div>
         </div>
-        <div class="frame">
-          <div class="frameIcon">
+        <div class="featuresSection">
+          <div class="featuresIcon">
             <p>03</p>
           </div>
-          <div class="frameText">
+          <div class="featuresText">
             <h4>Results You Deserve</h4>
             <p>
               Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna
@@ -262,7 +262,7 @@
       <div class="actionImg">
         <div class="actionHeader">
           <h2>Let's get started. Call us now for a Free Consultation</h2>
-          <button style="width: 196px; height: 58px">Call Us Now</button>
+          <button class="callUsNowButton" style="width: 196px; height: 58px">Call Us Now</button>
         </div>
       </div>
     </section>
@@ -272,32 +272,32 @@
     <section class="atorneys" id="attorneys">
       <h4>OUR ATTORNEYS</h4>
       <h2>Meet Our Attorneys</h2>
-      <div class="colorFrame">
-        <div class="atorFrame">
+      <div class="atorneysColorFrame">
+        <div class="atorneysInfo">
           <h5>Attorney Name</h5>
           <p>Practice Area</p>
-          <div class="atorImage">
+          <div class="atorneysImage">
             <img src="img/team-1.jpg" alt="" />
           </div>
         </div>
-        <div class="atorFrame">
+        <div class="atorneysInfo">
           <h5>Attorney Name</h5>
           <p>Practice Area</p>
-          <div class="atorImage">
+          <div class="atorneysImage">
             <img src="img/team-2.jpg" alt="" />
           </div>
         </div>
-        <div class="atorFrame">
+        <div class="atorneysInfo">
           <h5>Attorney Name</h5>
           <p>Practice Area</p>
-          <div class="atorImage">
+          <div class="atorneysImage">
             <img src="img/team-4.jpg" alt="" />
           </div>
         </div>
-        <div class="atorFrame">
+        <div class="atorneysInfo">
           <h5>Attorney Name</h5>
           <p>Practice Area</p>
-          <div class="atorImage">
+          <div class="atorneysImage">
             <img src="img/team-5.jpg" alt="" />
           </div>
         </div>
@@ -309,9 +309,9 @@
     <section class="testimoial">
       <h4>TESTIMONIAL</h4>
       <h2>What Our Clients Say</h2>
-      <div class="testimMenu">
-        <div class="testimFrame">
-          <div class="testimText">
+      <div class="testimoialMenu">
+        <div class="testimoials">
+          <div class="testimoialsText">
             <p>
               Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo
               elitr clita lorem
@@ -323,8 +323,8 @@
             </div>
           </div>
         </div>
-        <div class="testimFrame">
-          <div class="testimText">
+        <div class="testimoials">
+          <div class="testimoialsText">
             <p>
               Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo
               elitr clita lorem
@@ -336,8 +336,8 @@
             </div>
           </div>
         </div>
-        <div class="testimFrame">
-          <div class="testimText">
+        <div class="testimoials">
+          <div class="testimoialsText ">
             <p>
               Sed ea amet kasd elitr stet nonumy, stet rebum et ipsum est duo
               elitr clita lorem
@@ -354,29 +354,29 @@
 
     <!-- -------------------footer----------------- -->
 
-    <footer id="contact">
-      <div class="div1">
+    <footer class="contactFooterMenu">
+      <div class="contactsFooter">
         <i class="fa fa-2x fa-map-marker-alt text-primary"></i>
         <div>
           <h5>Our Office</h5>
           <p>123 Street, New York, USA</p>
         </div>
       </div>
-      <div class="div1">
+      <div class="contactsFooter">
         <i class="fa fa-2x fa-envelope-open text-primary"></i>
         <div>
           <h5>Email Us</h5>
           <p>info@example.com</p>
         </div>
       </div>
-      <div class="div1">
+      <div class="contactsFooter">
         <i class="fa fa-2x fa-phone-alt text-primary"></i>
         <div>
           <h5>Call Us</h5>
           <p>+012 345 6789</p>
         </div>
       </div>
-      <div class="div2">
+      <div class="footerSections">
         <h2>JUSTICE</h2>
         <p>
           Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem
@@ -389,7 +389,7 @@
           <div class="footIcon"><i class="fab fa-instagram"></i></div>
         </div>
       </div>
-      <div class="div2">
+      <div class="footerSections">
         <h4>Popular Links</h4>
         <ul>
           <li>Home</li>
@@ -399,7 +399,7 @@
           <li>Contact</li>
         </ul>
       </div>
-      <div class="div2">
+      <div class="footerSections">
         <h4>Quick Links</h4>
         <ul>
           <li>FAQs</li>
@@ -409,7 +409,7 @@
           <li>Site Map</li>
         </ul>
       </div>
-      <div class="div2">
+      <div class="footerSections">
         <h4>Newsletter</h4>
         <p>
           Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum
@@ -417,14 +417,14 @@
         </p>
         <form action="#">
           <input type="email" placeholder="Your Email" />
-          <button style="width: 115px">Sign Up</button>
+          <button class="signUpButton" style="width: 115px">Sign Up</button>
         </form>
       </div>
-      <div class="div3">
-        <div class="divA">
+      <div class="footerInfo">
+        <div class="footerInfoSection1">
           <p>© <a href="#">Your Site Name.</a> All Rights Reserved.</p>
         </div>
-        <div class="divB">
+        <div class="footerInfoSection2">
           <p>Designed by <a href="https://htmlcodex.com/">HTML Codex</a></p>
         </div>
       </div>

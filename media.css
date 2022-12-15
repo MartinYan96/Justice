@@ -1,28 +1,32 @@
 @media screen and (max-width: 1440px) {
-  footer > .div1 {
+  .contactFooterMenu > .contactsFooter {
     width: 431px;
   }
-  footer > .div2 {
+  .contactFooterMenu > .footerSections {
     width: 317px;
   }
-  .testimoial .testimMenu {
+  .testimoial .testimoialMenu {
     gap: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .carusel .photo p {
+  .slider .photo p {
     font-size: 49px;
   }
-  .carusel .photo .icons label .frame {
+  .slider .photo .icons label .prevSliderIcon,
+  .slider .photo .icons label .nextSliderIcon{
     transform: translate(60px, 300px);
   }
-  .apoitment .apoHeader .menu .apoData {
+  .apoitment .apoitmentHeader .apoitmentMenu .apoData {
     width: 97.5%;
   }
-  .apoitment .apoHeader .menu > button {
+  .apoitment .apoitmentHeader .apoitmentMenu > button {
     width: 83.5%;
     height: 56px;
     margin-right: 2%;
+  }
+  .features .featuresTextSections{
+    padding: 0;
   }
   .aboutUs .aboutText {
     gap: 10px;
@@ -40,24 +44,24 @@
   .features img {
     width: 300px;
   }
-  .atorneys .colorFrame {
+  .atorneys .atorneysColorFrame {
     flex-wrap: wrap;
     height: 80%;
     gap: 120px;
   }
-  .atorneys .colorFrame .atorFrame > h5 {
+  .atorneys .atorneysColorFrame .atorneysInfo> h5 {
     text-align: center;
   }
-  .testimoial .testimMenu {
+  .testimoial .testimoialMenu {
     flex-wrap: wrap;
   }
-  footer > .div1 {
+  .contactFooterMenu > .contactsFooter {
     width: 300px;
   }
-  footer > .div2 {
+  .contactFooterMenu > .footerSections {
     width: 304px;
   }
-  footer > .div3 {
+  .contactFooterMenu > .footerInfo {
     margin-bottom: 5%;
   }
 }
@@ -71,23 +75,23 @@
   main .logo {
     background-color: white;
   }
-  .contacts .frow {
+  .headerMenu .contacts {
     display: none;
   }
-  .apoitment .apoHeader .menu {
+  .apoitment .apoitmentHeader .apoitmentMenu{
     width: 80%;
   }
-  .services {
+  .ourPractice {
     display: flex;
     flex-direction: column;
   }
   .action .actionImg .actionHeader > h2 {
     font-size: 30px;
   }
-  footer > .div3 {
+  .contactFooterMenu > .footerInfo {
     margin-bottom: 8%;
   }
-  footer > .div1 {
+  .contactFooterMenu > .contactsFooter {
     width: 216px;
   }
   .bugerUl {
@@ -101,6 +105,9 @@
     transform: translate(700px, 20px);
     display: block;
   }
+  .ourPractice .ourPracticeService{
+    width: 90%;
+  }
 }
 @media screen and (max-width: 425px) {
   .aboutUs {
@@ -108,7 +115,7 @@
     flex-direction: column;
     padding: 50% 5% 0 5%;
   }
-  .Services {
+  .ourPractice {
     display: flex;
     flex-direction: column-reverse;
     padding: 30% 5% 30% 5%;
@@ -118,14 +125,16 @@
     width: 90%;
     margin: 30% 5% 30% 5%;
   }
-  .apoitment .apoHeader {
+  .apoitment .apoitmentHeader {
     width: 100%;
     height: 100%;
   }
-  .services{
-    padding-left: 5%;
+  .ourPractice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .services .colFrame {
+  .ourPractice .ourPracticeService {
     height: auto;
     display: flex;
     flex-direction: column;
@@ -136,19 +145,19 @@
   .features img {
     width: 100%;
   }
-  .features .text > .frame {
+  .features .featuresTextSections > .featuresSection {
     width: 100%;
   }
-  .features .text .frameIcon {
-    width: 35%;
+  .features .featuresTextSections .featuresText{
+    width: 80%;
   }
-  .testimoial .testimMenu .testimFrame {
+  .testimoial .testimoialMenu .testimoials {
     gap: 10px;
   }
-  .testimoial .testimMenu .testimFrame .testimText > p {
+  .testimoial .testimoialMenu .testimoials .testimoialsText > p {
     line-height: 1;
   }
-  .testimoial .testimMenu .testimFrame .testimText {
+  .testimoial .testimoialMenu .testimoials .testimoialsText {
     padding: 15% 8%;
   }
   .action {
@@ -163,28 +172,29 @@
     font-size: 25px;
     padding-bottom: 5%;
   }
-  footer > .div1 {
+  .contactFooterMenu > .contactsFooter {
     font-size: 30px;
     justify-content: start;
     padding-left: 10px;
   }
-  footer > .div1 i {
+  .contactFooterMenu > .contactsFooter i {
     font-size: 30px;
   }
-  footer > .div1 h5 {
+  .contactFooterMenu > .contactsFooter h5 {
     font-size: 16px;
   }
-  footer > .div1 p {
+  .contactFooterMenu > .contactsFooter p {
     font-size: 12px;
   }
-  footer > .div3 {
+  .contactFooterMenu > .footerInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
     margin-bottom: 30%;
   }
-  .carusel .photo .icons label .frame {
+  .slider .photo .icons label .prevSliderIcon,
+.slider .photo .icons label .nextSliderIcon{
     transform: translate(10px, 250px);
   }
   .burgerLabel {
@@ -195,13 +205,11 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .features .text .frameIcon {
-    width: 53%;
-  }
-  .testimoial .testimMenu .testimFrame .testimCleint .testimCleintImg > img {
+  .testimoial .testimoialMenu .testimoials .testimCleint .testimCleintImg > img {
     height: 85%;
   }
-  .carusel .photo .icons label .frame {
+  .slider .photo .icons label .prevSliderIcon,
+.slider .photo .icons label .nextSliderIcon{
     transform: translate(5px, 250px);
   }
   .burgerLabel {
@@ -209,22 +217,20 @@
   }
 }
 @media screen and (max-width: 320px) {
-  .carusel .photo .icons label .frame {
+  .slider .photo .icons label .prevSliderIcon,
+  .slider .photo .icons label .nextSliderIcon {
     transform: translate(1px, 250px);
   }
   .burgerLabel {
     transform: translate(270px, 35px);
   }
-  .features .text .frameIcon {
-    width: 100%;
-  }
   .atorneys > h2 {
     padding-left: 22%;
   }
-  .testimoial .testimMenu .testimFrame .testimText {
+  .testimoial .testimoialMenu .testimoials .testimoialsText {
     height: 83%;
   }
-  .testimoial .testimMenu .testimFrame .testimCleint .testimCleintImg > img {
+  .testimoial .testimoialMenu .testimoials .testimCleint .testimCleintImg > img {
     height: 75%;
   }
 }
