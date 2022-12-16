@@ -404,9 +404,6 @@ input[type="checkbox"] {
   font: 20px "Roboto", sans-serif;
   color: #37373f;
 }
-.features .featuresTextSections .featuresText {
-  width: 474px;
-}
 
 /* --------------Action------------- */
 
@@ -448,7 +445,6 @@ input[type="checkbox"] {
 }
 .atorneys .atorneysColorFrame {
   width: 60%;
-  height: 300px;
   background-color: #fff;
   border-radius: 6px;
   display: flex;
@@ -465,6 +461,7 @@ input[type="checkbox"] {
 }
 .atorneys .atorneysColorFrame .atorneysInfo {
   width: 240px;
+  min-width: 200px;
   height: 100%;
   background-color: #b49c73;
   border: none;
@@ -517,6 +514,7 @@ input[type="checkbox"] {
 }
 .testimoial .testimoialMenu .testimoials {
   width: 300px;
+  min-width: 300px;
   height: 230px;
   border: 1px solid black;
   display: flex;
@@ -698,9 +696,9 @@ input[type="checkbox"] {
   width: 45px;
   height: 45px;
   position: absolute;
-  top: 0;
+  top: 10px;
   z-index: 10;
-  right: 0;
+  right: 10px;
   display: none;
 }
 .burgerLabel:hover {

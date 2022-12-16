@@ -8,6 +8,11 @@
   .testimoial .testimoialMenu {
     gap: 10px;
   }
+  .atorneys .atorneysColorFrame{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 1024px) {
   .slider .photo p {
@@ -47,7 +52,6 @@
   .atorneys .atorneysColorFrame {
     flex-wrap: wrap;
     height: 80%;
-    gap: 120px;
   }
   .atorneys .atorneysColorFrame .atorneysInfo> h5 {
     text-align: center;
