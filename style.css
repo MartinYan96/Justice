@@ -228,13 +228,17 @@ input[type="checkbox"] {
 }
 .ourPractice .ourPracticeService {
   border-radius: 5px;
-  height: 300px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
+}
+.ourPractice .ourPracticeArea p{
+  padding: 0 10px 0 0;
 }
 .ourPractice .ourPracticeService .practiceSections {
   width: 180px;
   height: 300px;
+  min-width: 124px;
   background-color: #b49c73;
   border: none;
   border-radius: 6px;
@@ -249,6 +253,8 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   width: 80px;
+  min-width: 80px;
+  min-height: 80px;
   height: 80px;
   border-radius: 50%;
   background-color: black;
@@ -289,6 +295,12 @@ input[type="checkbox"] {
   align-items: center;
   border-radius: 6px;
   padding: 5% 0;
+}
+.apoitment .apoitmentHeader .apoitmentMenu h2 {
+  font: 40px "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  padding: 0 5px;
 }
 .apoitment .apoitmentHeader .apoitmentMenu form {
   display: flex;
@@ -363,8 +375,9 @@ input[type="checkbox"] {
   color: #37373f;
   margin-bottom: 24px;
 }
+
 .features .featuresTextSections> .featuresSection {
-  width: 544px;
+  width: 100%;
   display: flex;
 }
 .features .featuresTextSections > .featuresSection h4 {
@@ -377,6 +390,8 @@ input[type="checkbox"] {
 }
 .features .featuresTextSections .featuresIcon {
   width: 46px;
+  min-width: 46px;
+  min-height: 46px;
   height: 46px;
   background-color: #b49c73;
   display: flex;
@@ -680,6 +695,12 @@ input[type="checkbox"] {
   display: none;
 }
 .burgerLabel {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  right: 0;
   display: none;
 }
 .burgerLabel:hover {
