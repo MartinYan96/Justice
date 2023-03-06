@@ -18,10 +18,7 @@
   .slider .photo p {
     font-size: 49px;
   }
-  .slider .photo .icons label .prevSliderIcon,
-  .slider .photo .icons label .nextSliderIcon{
-    transform: translate(60px, 300px);
-  }
+
   .apoitment .apoitmentHeader .apoitmentMenu .apoData {
     width: 97.5%;
   }
@@ -203,35 +200,16 @@
     gap: 15px;
     margin-bottom: 30%;
   }
-  .slider .photo .icons label .prevSliderIcon,
-.slider .photo .icons label .nextSliderIcon{
-    transform: translate(10px, 250px);
-  }
+
   .burgerLabel::before {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 375px) {
-  .testimoial .testimoialMenu .testimoials .testimCleint .testimCleintImg > img {
-    height: 85%;
-  }
-  .slider .photo .icons label .prevSliderIcon,
-.slider .photo .icons label .nextSliderIcon{
-    transform: translate(5px, 250px);
-  }
-}
 @media screen and (max-width: 320px) {
-  .slider .photo .icons label .prevSliderIcon,
-  .slider .photo .icons label .nextSliderIcon {
-    transform: translate(1px, 250px);
-  }
   .atorneys > h2 {
     padding-left: 22%;
   }
   .testimoial .testimoialMenu .testimoials .testimoialsText {
     height: 83%;
-  }
-  .testimoial .testimoialMenu .testimoials .testimCleint .testimCleintImg > img {
-    height: 75%;
   }
 }
