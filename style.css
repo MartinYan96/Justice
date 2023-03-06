@@ -721,6 +721,7 @@ input[type="checkbox"] {
   width: 100%;
   background-color: #fff;
   transition: 1s;
+  padding-left: 10px;
 }
 .burgerUl li {
   font: 17px "Roboto", sans-serif;
